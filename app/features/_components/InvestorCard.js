@@ -6,7 +6,7 @@ export default function InvestorCard({ investor }) {
     <Card className="w-full h-full border-4 border-black rounded-lg transition-all duration-300 hover:shadow-[15px_15px_0_#71A894] cursor-pointer">
       <div className="content flex flex-col p-6">
         <div className="flex items-center space-x-4 tracing-wide">
-          <Image src={investor.avatar} alt={investor.name} width={72} height={72} quality={100} />
+          <Image src={investor.avatar} alt={investor.name} width={72} height={72} quality={100} placeholder="blur" />
           <div className="space-y-2">
             <h4 className="font-[700] text-2xl tracking-widest">{investor.name}</h4>
             <p className="text-gray-500 text-base tracking-wide">Pre-seed angel investor</p>

@@ -16,7 +16,7 @@ export default function Section({ title, description, icon, children, reverse = 
 
       className={`grid items-center grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 mb-24`}>
       <div className={`space-y-4 ${contentOrder}`}>
-        {icon && <Image src={icon} alt="Icon" width={80} height={80} quality={100} priority />}
+        {icon && <Image src={icon} alt="Icon" width={80} height={80} quality={100} priority placeholder="blur" />}
         <h2 className="mb-4 text-5xl font-bold tracking-wide text-center text-black md:leading-wide sm:text-left md:text-5xl">{title}</h2>
         <p className="mb-5 text-base text-center text-gray-600 sm:text-left md:text-lg">
           {description}

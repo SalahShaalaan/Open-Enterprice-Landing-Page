@@ -51,6 +51,7 @@ export default function Page() {
               quality={100}
               className="w-full max-w-3xl object-cover"
               priority
+              placeholder="blur"
             />
           </div>
         </div>

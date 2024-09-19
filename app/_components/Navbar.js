@@ -26,7 +26,7 @@ function Navbar() {
     >
       <div className="flex justify-between items-center relative">
         <div className="flex items-center gap-4">
-          <Image src={logo} alt="Open Enterprise Logo" width={70} height={70} quality={100} loading="lazy" className="w-auto h-auto" />
+          <Image src={logo} alt="Open Enterprise Logo" width={70} height={70} quality={100} loading="lazy" className="w-auto h-auto" placeholder="blur" />
           <Link href="/" className="font-medium tracking-wide text-lg md:text-xl lg:text-2xl">Open Enterprise</Link>
         </div>
         <button

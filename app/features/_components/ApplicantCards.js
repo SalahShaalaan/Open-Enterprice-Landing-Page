@@ -21,7 +21,7 @@ export default function ApplicantCard({ applicants }) {
           {applicants.map((applicant, index) => (
             <div key={index} className="flex items-center justify-between">
               <div className="flex items-center space-x-4">
-                <Image src={applicant.avatar} alt={applicant.name} width={40} height={40} quality={100} />
+                <Image src={applicant.avatar} alt={applicant.name} width={40} height={40} quality={100} placeholder="blur" />
                 <h4 className="font-[700] tracking-widest">{applicant.name}</h4>
               </div>
               <div className="flex items-center">
@@ -37,7 +37,7 @@ export default function ApplicantCard({ applicants }) {
 
       <Card className="border-4 border-[#71A894] flex flex-col items-center p-4 rounded-lg transform translate-y-4 col-span-12 md-800:col-span-5 md-900:col-span-5">
         <div className="text-center mb-4">
-          <Image src={avatar} alt="Random Person" width={72} height={72} quality={100} className="mx-auto rounded-full" />
+          <Image src={avatar} alt="Random Person" width={72} height={72} quality={100} className="mx-auto rounded-full" placeholder="blur" />
           <h3 className="font-bold mt-2 tracking-wider">Alex Rose</h3>
           <p className="text-sm text-gray-600">UX Writer</p>
         </div>

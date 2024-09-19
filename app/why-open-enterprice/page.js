@@ -66,6 +66,7 @@ export default function Page() {
                   height={88}
                   quality={100}
                   aria-hidden="true"
+                  placeholder="blur"
                 />
               </div>
               <h3 className="text-xl font-bold tracking-wide text-center mb-2">{card.title}</h3>

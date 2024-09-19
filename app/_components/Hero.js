@@ -37,6 +37,7 @@ function Hero() {
             width={750}
             height={600}
             priority
+            placeholder="blur"
           />
         </div>
       </div>

@@ -8,7 +8,7 @@ export default function MemberCard({ members }) {
       <div className="card-content flex flex-col space-y-6 mt-6">
         {members.map((member, index) => (
           <div key={index} className="flex items-center space-x-4">
-            <Image src={member.avatar} alt={member.name} width={72} height={72} quality={100} />
+            <Image src={member.avatar} alt={member.name} width={72} height={72} quality={100} placeholder="blur" />
             <div>
               <h4 className="font-[700]">{member.name}</h4>
               <p className="text-gray-500">{member.shares}</p>
